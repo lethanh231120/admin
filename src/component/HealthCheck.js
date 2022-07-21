@@ -32,9 +32,9 @@ export const HealthCheck = () => {
   }
   
   const checkHealth = async() => {
-    const coinPriceService = await axios.get('http://139.180.147.199:8081/health').then(res => res).catch(error => error)
-    const accountService = await axios.get('http://139.180.147.199:8080/health').then(res => res).catch(error => error)
-    const addressService = await axios.get('http://139.180.147.199:8082/health').then(res => res).catch(error => error)
+    const coinPriceService = await axios.get('coinPriceService/health').then(res => res).catch(error => error)
+    const accountService = await axios.get('accountService/health').then(res => res).catch(error => error)
+    const addressService = await axios.get('addressService/health').then(res => res).catch(error => error)
     console.log('coinPriceService', coinPriceService)
     console.log('accountService', accountService)
     console.log('addressService', addressService)

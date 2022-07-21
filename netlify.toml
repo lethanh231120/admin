@@ -1,4 +1,20 @@
 [[redirects]]
-from= "/*"
-to= "/index.html"
-status=200
+  from = "/addressService/*"
+  to = "http://139.180.147.199:8082/:splat"
+  status = 200
+  force = true
+  headers = {Access-Control-Allow-Origin = "*"}
+
+[[redirects]]
+  from = "/accountService/*"
+  to = "http://139.180.147.199:8080/:splat"
+  status = 200
+  force = true
+  headers = {Access-Control-Allow-Origin = "*"}
+
+[[redirects]]
+  from = "/coinPriceService/*"
+  to = "http://139.180.147.199:8081/:splat"
+  status = 200
+  force = true
+  headers = {Access-Control-Allow-Origin = "*"}
