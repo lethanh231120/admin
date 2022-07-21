@@ -9,6 +9,7 @@ export const LogBasic = () => {
     <Layout style={{ minHeight: '100vh' }}>
         <SideBar/>
         <Routes>
+          <Route path='/' element={<ContentLog />} />
           <Route path='/logs-basic' element={<ContentLog />} />
           <Route path='/health' element={<HealthCheck />} />
         </Routes>
