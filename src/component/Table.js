@@ -1,8 +1,7 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import 'antd/dist/antd.css';
 import './index.css';
 import { Table, Tag, Form, Input, Button } from 'antd';
-import axios from 'axios'
 const columns = [
   {
     title: 'Service',
